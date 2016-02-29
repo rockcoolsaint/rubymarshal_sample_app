@@ -1,27 +1,34 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
+
 gem 'rails_12factor', group: :production
+
 gem 'pg', group: :production
+
 group :development do
-	gem 'rspec-rails', '2.0.1'
+	gem 'rspec-rails', '>=3.4.2'
 end
 
 group :test do
-	gem 'rspec', '2.0.1'
+	gem 'minitest'
+	gem 'rspec', '>=3.4.0'
 	gem 'webrat', '0.7.1'
 end
+
+#gem 'activeadmin', github: 'activeadmin'
+
 #gem "rspec-rails", :group => [:development, :test]
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '>= 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -51,4 +58,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'coffee-script-source', '1.8.0'
 
-gem 'diff-lcs', '~> 1.2', '>= 1.2.5'
+#gem 'diff-lcs', '~> 1.2', '>= 1.2.5'
+
+#gem 'win32console', '~> 1.3', '>= 1.3.2'
+
+#gem 'actionpack', '~> 3.0'
+
+#gem 'autotest', '~> 4.3', '>= 4.3.2'
+
+#gem 'autotest-rails', '~> 4.2', '>= 4.2.1'
