@@ -10,8 +10,11 @@ gem 'rails_12factor', group: :production
 
 gem 'pg', group: :production
 
+gem 'will_paginate', '~>3.0.4'
+
 group :development do
 	gem 'rspec-rails', '>=2.4.0'
+	gem 'faker', '0.3.1'
 end
 
 group :test do

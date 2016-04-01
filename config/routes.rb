@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  resources :sessions, :only => [:new, :create, :destroy]
-
   resources :users
+
+  resources :sessions, :only => [:new, :create, :destroy]
 
   root 'pages#home'
 
   get '/signin' => 'sessions#new'
 
-  get '/signout' => 'sessions#destroy'
+  delete '/signout' => 'sessions#destroy'
 
   get '/signup' => 'users#new' 
 
